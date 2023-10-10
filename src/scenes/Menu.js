@@ -20,10 +20,11 @@ class Menu extends Phaser.Scene {
             fixedWidth: 0
         }
 
+        this.add.tileSprite(0, 0,920, 680, 'title').setOrigin(0,0);
         //soome text instructions
-        this.add.text(game.config.width/2, game.config.height/5 - borderUISize - borderPadding, "Find the Constellation", menuConfig).setOrigin(0.5);
+        /*this.add.text(game.config.width/2, game.config.height/5 - borderUISize - borderPadding, "Find the Constellation", menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/3 - borderUISize - borderPadding, "", menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/2.5 - borderUISize - borderPadding, "Press Space to Begin", menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2.5 - borderUISize - borderPadding, "Press Space to Begin", menuConfig).setOrigin(0.5);*/
         //define some keys
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 

@@ -19,7 +19,8 @@ class Load extends Phaser.Scene {
         this.load.path = './assets/';
         // load graphics assets
       
-        this.load.image('backdrop', 'background.png');
+        this.load.image('backdrop', 'background_stars.png');
+        this.load.image('title', 'Title.png');
         this.load.image('Cassiopeia', 'Cassiopeia.png');
         this.load.image('Corvus', 'Corvus.png');
         this.load.image('Libra', 'Libra.png');
