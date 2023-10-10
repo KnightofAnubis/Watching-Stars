@@ -40,7 +40,7 @@ class Play extends Phaser.Scene {
 
          //Cassiopeia
          this.cassiopeia = this.add.sprite(game.config.width/5, game.config.height/4, 'Cassiopeia').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
-         this.cassiopeia.setDisplaySize(100,50);
+         //this.cassiopeia.setDisplaySize(100,50);
 
          this.cassiopeia.on('pointerdown', function (pointer)
             {
@@ -52,8 +52,8 @@ class Play extends Phaser.Scene {
          
  
          //Corvus
-         this.corvus = this.add.sprite(game.config.width/1.5, game.config.height/4, 'Corvus').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
-         this.corvus.setDisplaySize(100,50);
+         this.corvus = this.add.sprite(game.config.width/1.3, game.config.height/4.2, 'Corvus').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
+         //this.corvus.setDisplaySize(100,50);
          this.corvus.on('pointerdown', function (pointer)
             {
 
@@ -65,7 +65,7 @@ class Play extends Phaser.Scene {
  
          //Libra
          this.libra = this.add.sprite(game.config.width/1.5, game.config.height/2, 'Libra').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
-         this.libra.setDisplaySize(100,100);
+         //this.libra.setDisplaySize(100,100);
          this.libra.on('pointerdown', function (pointer)
             {
 
@@ -77,7 +77,7 @@ class Play extends Phaser.Scene {
  
          //Ursa Minor
          this.ursa_minor = this.add.sprite(game.config.width/5, game.config.height/2, 'Ursa_Minor').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
-         this.ursa_minor.setDisplaySize(80,80);
+         //this.ursa_minor.setDisplaySize(80,80);
          this.ursa_minor.on('pointerdown', function (pointer)
             {
 
@@ -127,7 +127,7 @@ class Play extends Phaser.Scene {
         
         this.time = this.add.text(game.config.width/2.3, borderUISize + borderPadding*2, '', menuConfig);
         startTime = Math.floor(this.sys.game.loop.time/1000);
-        gameTimer = 50;
+        gameTimer = 30;
         
         this.gameOver = false;
         

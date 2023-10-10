@@ -20,27 +20,29 @@ class Selection extends Phaser.Scene {
             },
             fixedWidth: 0
         }
+
+        this.add.tileSprite(0, 0,920, 680, 'sky').setOrigin(0,0);
         //instructions
         this.add.text(game.config.width/2, game.config.height/5 - borderUISize - borderPadding, "The following constellations are the ones you will try to locate:", menuConfig).setOrigin(0.5);
        
         //Cassiopeia
         this.cassiopeia = this.add.image(game.config.width/5, game.config.height/4, 'Cassiopeia').setOrigin(0.5, 0);
-        this.cassiopeia.setDisplaySize(100,50);
+        //this.cassiopeia.setDisplaySize(100,50);
         this.add.text(game.config.width/5, game.config.height/4.8, "Cassiopeia", menuConfig).setOrigin(0.5);
 
         //Corvus
         this.corvus = this.add.image(game.config.width/1.5, game.config.height/4, 'Corvus').setOrigin(0.5, 0);
-        this.corvus.setDisplaySize(100,50);
+        //this.corvus.setDisplaySize(100,50);
         this.add.text(game.config.width/1.5, game.config.height/4.8, "Corvus", menuConfig).setOrigin(0.5);
 
         //Libra
         this.libra = this.add.image(game.config.width/1.5, game.config.height/2, 'Libra').setOrigin(0.5, 0);
-        this.libra.setDisplaySize(100,100);
+        //this.libra.setDisplaySize(100,100);
         this.add.text(game.config.width/1.5, game.config.height/2.2, "Libra", menuConfig).setOrigin(0.5);
 
         //Ursa Minor
         this.ursa_minor = this.add.image(game.config.width/5, game.config.height/2, 'Ursa_Minor').setOrigin(0.5, 0);
-        this.ursa_minor.setDisplaySize(100,100);
+        //this.ursa_minor.setDisplaySize(100,100);
         this.add.text(game.config.width/5, game.config.height/2.2, "Ursa Minor", menuConfig).setOrigin(0.5);
         
         this.add.text(game.config.width/2, game.config.height/1.3, "Use WASD to move and mouse to click on Constellations", menuConfig).setOrigin(0.5);
