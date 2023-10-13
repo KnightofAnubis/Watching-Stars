@@ -19,7 +19,7 @@ let config = {
         }
     },
 
-    scene: [Load, Menu,  Selection,  Play, GameOver, Winner]
+    scene: [Load, Menu,  Selection, Tutorial,  Play, GameOver, Winner]
    
 }
 //menu config
@@ -41,8 +41,9 @@ let game = new Phaser.Game(config);
 let borderUISize = game.config.height / 15;
 let borderPadding = borderUISize / 3;
 
-let keyLEFT, keyRIGHT, keyUP, keyDOWN, keyR, keyM, keySPACE, keyW, keyA, keyS, keyD;
-let level;
+let keyLEFT, keyRIGHT, keyUP, keyDOWN, keyR, keyM, keySPACE, keyW, keyA, keyS, keyD, keyN;
+let level = 0;
 let startTime;
 let gameTimer;
 let constellations;
+let star1, star2, star3, star4;
