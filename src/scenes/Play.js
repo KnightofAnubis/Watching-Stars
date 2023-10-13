@@ -50,7 +50,7 @@ class Play extends Phaser.Scene {
 
                     this.setTint(0xff0000);
                     star1 = true;
-                    constellations +=1;
+                    
 
                 });
             //Corvus
@@ -61,7 +61,7 @@ class Play extends Phaser.Scene {
 
                     this.setTint(0xff0000);
                     star2 = true;
-                    constellations +=1;
+                    
 
                 });
             
@@ -74,7 +74,7 @@ class Play extends Phaser.Scene {
 
                     this.setTint(0xff0000);
                     star3 = true;
-                    constellations +=1;
+                    
 
                 });
             
@@ -87,8 +87,7 @@ class Play extends Phaser.Scene {
 
                     this.setTint(0xff0000);
                     star4 = true;
-                    constellations +=1;
-
+                   
                 });
             
         }
@@ -143,7 +142,7 @@ class Play extends Phaser.Scene {
             
             console.log(constellations);
 
-            if(constellations == 4 && star1 == true && star2 == true && star3 == true&& star4 == true){
+            if(star1 == true && star2 == true && star3 == true&& star4 == true){
                 this.scene.start('winnerScene');
                 level += 1;
             }

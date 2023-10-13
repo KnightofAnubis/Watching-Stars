@@ -27,7 +27,7 @@ class Menu extends Phaser.Scene {
         this.add.text(game.config.width/2, game.config.height/2.5 - borderUISize - borderPadding, "Press Space to Begin", menuConfig).setOrigin(0.5);*/
         //define some keys
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-
+        level = 0;
     }
 
     update() {

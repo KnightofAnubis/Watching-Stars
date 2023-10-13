@@ -21,7 +21,7 @@ class Tutorial extends Phaser.Scene {
 
         this.add.text(game.config.width/2, game.config.height/7.5, "Use WASD keys to move light around", menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/5.5, "use the MOUSE to click on the stars of the Constellations", menuConfig).setOrigin(0.5);
-        
+        this.add.text(game.config.width/2, game.config.height - borderUISize - borderPadding, "Found Constellations will turn red", menuConfig).setOrigin(0.5);
         //some keys
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
@@ -81,8 +81,10 @@ class Tutorial extends Phaser.Scene {
             console.log(constellations);
 
             if(constellations == 1){
-                this.scene.start('winnerScene');
+                this.time.delayedCall(1000, () => { 
+                    this.scene.start('winnerScene');
                 level += 1;
+                });
             }
            
             

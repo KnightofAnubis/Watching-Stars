@@ -50,10 +50,10 @@ class Selection extends Phaser.Scene {
             this.ursa_minor = this.add.image(game.config.width/5, game.config.height/2, 'Ursa_Minor').setOrigin(0.5, 0);
             this.ursa_minor.setDisplaySize(150,150);
             this.add.text(game.config.width/5, game.config.height/2.2, "Ursa Minor", menuConfig).setOrigin(0.5);
+    
         }
         
-        this.add.text(game.config.width/2, game.config.height/1.3, "Use WASD keys to move light around then", menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/1.22, "use the MOUSE to click on the stars of the Constellations", menuConfig).setOrigin(0.5);
+        
         this.add.text(game.config.width/2, game.config.height - borderUISize - borderPadding, "Press SPACE to continue...", menuConfig).setOrigin(0.5);
         
         //defining keys
