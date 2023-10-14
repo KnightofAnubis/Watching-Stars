@@ -31,10 +31,10 @@ class Selection extends Phaser.Scene {
             this.add.text(game.config.width/2, game.config.height/4.8, "Cassiopeia", menuConfig).setOrigin(0.5);
        }
         if(level == 1 ){
-            //Cassiopeia
-            this.cassiopeia = this.add.image(game.config.width/5, game.config.height/4, 'Cassiopeia').setOrigin(0.5, 0);
-            this.cassiopeia.setDisplaySize(150,100);
-            this.add.text(game.config.width/5, game.config.height/4.8, "Cassiopeia", menuConfig).setOrigin(0.5);
+            //Cancer
+            this.cancer = this.add.image(game.config.width/5, game.config.height/4, 'Cancer').setOrigin(0.5, 0);
+            this.cancer.setDisplaySize(100,100);
+            this.add.text(game.config.width/5, game.config.height/4.8, "Cancer", menuConfig).setOrigin(0.5);
 
             //Corvus
             this.corvus = this.add.image(game.config.width/1.5, game.config.height/4, 'Corvus').setOrigin(0.5, 0);
@@ -50,6 +50,28 @@ class Selection extends Phaser.Scene {
             this.ursa_minor = this.add.image(game.config.width/5, game.config.height/2, 'Ursa_Minor').setOrigin(0.5, 0);
             this.ursa_minor.setDisplaySize(150,150);
             this.add.text(game.config.width/5, game.config.height/2.2, "Ursa Minor", menuConfig).setOrigin(0.5);
+    
+        }
+        if(level == 2 ){
+            //Lyra
+            this.lyra = this.add.image(game.config.width/5, game.config.height/4, 'Lyra').setOrigin(0.5, 0);
+            this.lyra.setDisplaySize(100,100);
+            this.add.text(game.config.width/5, game.config.height/4.8, "Lyra", menuConfig).setOrigin(0.5);
+
+            //Norma
+            this.norma = this.add.image(game.config.width/1.5, game.config.height/4, 'Norma').setOrigin(0.5, 0);
+            this.norma.setDisplaySize(150,100);
+            this.add.text(game.config.width/1.5, game.config.height/4.8, "Norma", menuConfig).setOrigin(0.5);
+
+            //Perseus
+            this.perseus = this.add.image(game.config.width/1.5, game.config.height/2, 'Perseus').setOrigin(0.5, 0);
+            this.perseus.setDisplaySize(200,150);
+            this.add.text(game.config.width/1.5, game.config.height/2.2, "Perseus", menuConfig).setOrigin(0.5);
+
+            //Triangulum
+            this.triangulum = this.add.image(game.config.width/5, game.config.height/2, 'Triangulum').setOrigin(0.5, 0);
+            this.triangulum.setDisplaySize(150,150);
+            this.add.text(game.config.width/5, game.config.height/2.2, "Triangulum Australe", menuConfig).setOrigin(0.5);
     
         }
         

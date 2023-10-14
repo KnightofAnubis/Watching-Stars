@@ -58,11 +58,6 @@ class Tutorial extends Phaser.Scene {
         //here we go...
         //check key input for restart
 
-       
-
-
-        
-
             if(keyUP.isDown || keyW.isDown){
                 this.light.y -= delta; 
                 

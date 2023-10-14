@@ -23,10 +23,18 @@ class Load extends Phaser.Scene {
         this.load.image('playbackground', 'background_play.png');
         this.load.image('sky', 'sky.png');
         this.load.image('title', 'Title.png');
+        //tutorial
         this.load.image('Cassiopeia', 'Cassiopeia.png');
+        //level 1
         this.load.image('Corvus', 'Corvus.png');
         this.load.image('Libra', 'Libra.png');
         this.load.image('Ursa_Minor', 'Ursa_Minor.png');
+        this.load.image('Cancer','Cancer.png');
+        //level 2
+        this.load.image('Lyra', 'Lyra.png');
+        this.load.image('Norma', 'Norma.png');
+        this.load.image('Perseus', 'Perseus.png');
+        this.load.image('Triangulum', 'Triangulum.png');
         
         
         
