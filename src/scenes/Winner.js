@@ -9,9 +9,15 @@ class Winner extends Phaser.Scene {
         menuConfig.color = '#ffffff';
         this.add.tileSprite(0, 0,920, 680, 'backdrop').setOrigin(0,0);
         this.add.text(game.config.width/2, game.config.height/5 - borderUISize - borderPadding, "Congratulations!!!", menuConfig).setOrigin(0.5);
+        if(level < 4){
+            this.add.text(game.config.width/2, game.config.height/2.2 - borderUISize - borderPadding, "Moving on to level: " + level, menuConfig).setOrigin(0.5);
+            this.add.text(game.config.width/2, game.config.height/1.5 - borderUISize - borderPadding, "Press (N) to continue to the next level.", menuConfig).setOrigin(0.5);
+        }
+        else{
+            this.add.text(game.config.width/2, game.config.height/2.2 - borderUISize - borderPadding, "You found all the stars!", menuConfig).setOrigin(0.5);
+            this.add.text(game.config.width/2, game.config.height/1.8 - borderUISize - borderPadding, "Brought to you by Kelsey Melott of team SPACE!!!", menuConfig).setOrigin(0.5);
+        }
         
-        this.add.text(game.config.width/2, game.config.height/2.2 - borderUISize - borderPadding, "Moving on to level: " + level, menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/1.5 - borderUISize - borderPadding, "Press (N) to continue to the next level.", menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/1.4 - borderUISize - borderPadding, "Press (M) for Menu Screen.", menuConfig).setOrigin(0.5);
          //define some keys
          keyN = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.N);

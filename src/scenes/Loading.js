@@ -35,6 +35,11 @@ class Load extends Phaser.Scene {
         this.load.image('Norma', 'Norma.png');
         this.load.image('Perseus', 'Perseus.png');
         this.load.image('Triangulum', 'Triangulum.png');
+        //level 3
+        this.load.image('Auriga', 'Auriga.png');
+        this.load.image('Hercules', 'Hercules.png');
+        this.load.image('Aries', 'Aries.png');
+        this.load.image('Pisces', 'Pisces.png');
         
         
         

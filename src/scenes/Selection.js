@@ -30,7 +30,7 @@ class Selection extends Phaser.Scene {
             this.cassiopeia.setDisplaySize(200,150);
             this.add.text(game.config.width/2, game.config.height/4.8, "Cassiopeia", menuConfig).setOrigin(0.5);
        }
-        if(level == 1 ){
+       if(level == 1 ){
             //Cancer
             this.cancer = this.add.image(game.config.width/5, game.config.height/4, 'Cancer').setOrigin(0.5, 0);
             this.cancer.setDisplaySize(100,100);
@@ -74,6 +74,27 @@ class Selection extends Phaser.Scene {
             this.add.text(game.config.width/5, game.config.height/2.2, "Triangulum Australe", menuConfig).setOrigin(0.5);
     
         }
+        if(level == 3 ){
+            //Auriga
+            this.auriga = this.add.image(game.config.width/5, game.config.height/4, 'Auriga').setOrigin(0.5, 0);
+            //this.auriga.setDisplaySize(100,100);
+            this.add.text(game.config.width/5, game.config.height/4.8, "Auriga", menuConfig).setOrigin(0.5);
+
+            //Hercules
+            this.hercules = this.add.image(game.config.width/1.5, game.config.height/4, 'Hercules').setOrigin(0.5, 0);
+           // this.hercules.setDisplaySize(170,120);
+            this.add.text(game.config.width/1.5, game.config.height/4.8, "Hercules", menuConfig).setOrigin(0.5);
+
+            //Pisces
+            this.pisces = this.add.image(game.config.width/1.5, game.config.height/1.6, 'Pisces').setOrigin(0.5, 0);
+           // this.pisces.setDisplaySize(150,150);
+            this.add.text(game.config.width/1.5, game.config.height/1.8, "Pisces", menuConfig).setOrigin(0.5);
+
+            //Aries
+            this.aries = this.add.image(game.config.width/5, game.config.height/1.6, 'Aries').setOrigin(0.5, 0);
+            //this.aries.setDisplaySize(150,150);
+            this.add.text(game.config.width/5, game.config.height/1.8, "Aries", menuConfig).setOrigin(0.5);
+        }
         
         
         this.add.text(game.config.width/2, game.config.height - borderUISize - borderPadding, "Press SPACE to continue...", menuConfig).setOrigin(0.5);
@@ -81,6 +102,7 @@ class Selection extends Phaser.Scene {
         //defining keys
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
+    
     }
 
     update() {

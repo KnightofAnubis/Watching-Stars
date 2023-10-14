@@ -43,7 +43,7 @@ class Play extends Phaser.Scene {
         if(level == 1){
             //Cancer
             this.cancer = this.add.sprite(game.config.width/5, game.config.height/5, 'Cancer').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
-
+            this.cancer.setDisplaySize(100,100);
             this.cancer.on('pointerdown', function (pointer)
                 {
 
@@ -91,6 +91,7 @@ class Play extends Phaser.Scene {
         if(level == 2 ){
             //Lyra
             this.lyra = this.add.sprite(game.config.width/4, game.config.height/4.5, 'Lyra').setPipeline('Light2D').setInteractive();
+            this.lyra.setDisplaySize(100,100);
             this.lyra.on('pointerdown', function (pointer)
                 {
 
@@ -102,6 +103,7 @@ class Play extends Phaser.Scene {
 
             //Norma
             this.norma = this.add.sprite(game.config.width/1.5, game.config.height/1.5, 'Norma').setPipeline('Light2D').setInteractive();
+            this.norma.setDisplaySize(150,100);
             this.norma.on('pointerdown', function (pointer)
                 {
 
@@ -113,6 +115,7 @@ class Play extends Phaser.Scene {
 
             //Perseus
             this.perseus = this.add.sprite(game.config.width/1.3, game.config.height/5, 'Perseus').setPipeline('Light2D').setInteractive();
+            this.perseus.setDisplaySize(200,150);
             this.perseus.on('pointerdown', function (pointer)
                 {
 
@@ -124,6 +127,7 @@ class Play extends Phaser.Scene {
 
             //Triangulum
             this.triangulum = this.add.sprite(game.config.width/5, game.config.height/1.5, 'Triangulum').setPipeline('Light2D').setInteractive();
+            this.triangulum.setDisplaySize(150,150);
             this.triangulum.on('pointerdown', function (pointer)
             {
 
@@ -134,7 +138,54 @@ class Play extends Phaser.Scene {
             });
     
         }
-         
+        //level 3
+        if(level == 3){
+            //Auriga
+            this.auriga = this.add.sprite(game.config.width/1.3, game.config.height/1.2, 'Auriga').setPipeline('Light2D').setInteractive();
+
+            this.auriga.on('pointerdown', function (pointer)
+                {
+
+                    this.setTint(0xff0000);
+                    star1 = true;
+                    
+
+                });
+            //Hercules
+            this.hercules = this.add.sprite(game.config.width/2, game.config.height/2.2, 'Hercules').setPipeline('Light2D').setInteractive();
+            this.hercules.on('pointerdown', function (pointer)
+                {
+
+                    this.setTint(0xff0000);
+                    star2 = true;
+                    
+
+                });
+            
+    
+            //Pisces
+            this.pisces = this.add.sprite(game.config.width/1.2, game.config.height/6, 'Pisces').setPipeline('Light2D').setInteractive();
+            this.pisces.on('pointerdown', function (pointer)
+                {
+
+                    this.setTint(0xff0000);
+                    star3 = true;
+                    
+
+                });
+            
+    
+            //Aries
+            this.aries = this.add.sprite(game.config.width/6, game.config.height/2, 'Aries').setPipeline('Light2D').setInteractive();
+            this.aries.on('pointerdown', function (pointer)
+                {
+
+                    this.setTint(0xff0000);
+                    star4 = true;
+                   
+                });
+            
+        }
         
         
         
