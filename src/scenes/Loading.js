@@ -18,7 +18,7 @@ class Load extends Phaser.Scene {
 
         this.load.path = './assets/';
         // load graphics assets
-      
+        this.load.image('playtest', 'aseprite/background.png');
         this.load.image('backdrop', 'background_stars.png');
         this.load.image('playbackground', 'background_play.png');
         this.load.image('sky', 'sky.png');

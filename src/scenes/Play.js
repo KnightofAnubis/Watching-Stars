@@ -41,6 +41,7 @@ class Play extends Phaser.Scene {
         star4 = false;
         
         if(level == 1){
+            gameTimer = 25;
             //Cancer
             this.cancer = this.add.sprite(game.config.width/5, game.config.height/5, 'Cancer').setOrigin(0.5, 0).setPipeline('Light2D').setInteractive();
             this.cancer.setDisplaySize(100,100);
@@ -89,6 +90,7 @@ class Play extends Phaser.Scene {
         }
         //level 2
         if(level == 2 ){
+            gameTimer = 20;
             //Lyra
             this.lyra = this.add.sprite(game.config.width/4, game.config.height/4.5, 'Lyra').setPipeline('Light2D').setInteractive();
             this.lyra.setDisplaySize(100,100);
@@ -140,6 +142,7 @@ class Play extends Phaser.Scene {
         }
         //level 3
         if(level == 3){
+            gameTimer = 15;
             //Auriga
             this.auriga = this.add.sprite(game.config.width/1.3, game.config.height/1.2, 'Auriga').setPipeline('Light2D').setInteractive();
 
@@ -191,7 +194,8 @@ class Play extends Phaser.Scene {
         
         this.time = this.add.text(game.config.width/2.3, borderUISize + borderPadding*2, '', menuConfig);
         startTime = Math.floor(this.sys.game.loop.time/1000);
-        gameTimer = 30;
+        
+        
         
         this.gameOver = false;
         
